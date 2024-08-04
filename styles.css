@@ -59,7 +59,7 @@ body {
 }
 
 .form {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 fieldset {
@@ -67,10 +67,51 @@ fieldset {
     margin: 0px;
     padding: 0px;
     background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    padding-bottom: 2rem;
+    width: 600px;
+    margin-top: 1.5rem;
+}
+
+label {
+    font-size: .75rem;
+    color: rgb(55, 56, 58);
+    letter-spacing: .1rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 240px;
+    margin-top: .25rem;
+    padding: .4rem .5rem;
+    border: .1rem solid #E5E7EB;
+    border-radius: .2rem;
+    font-size: .9rem;
+}
+
+input:focus {
+    border-color: rgb(30, 101, 255);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+input[type="password"]:invalid {
+    border-color: red;
 }
 
 .button {
-    margin-top: 1rem;
+    margin: 2rem 0;
 }
 
 button {
@@ -80,9 +121,19 @@ button {
     padding-bottom: .75rem;
     margin: 0;
     border: none;
-    background-color: rgb(61, 87, 15);
+    background-color: #596D48;
     color: white;
     font-size: 1rem;
     font-weight: 600;
     border-radius: .5rem;
+}
+
+.already {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.login {
+    color: #596D48;
+    font-weight: 600;
 }
